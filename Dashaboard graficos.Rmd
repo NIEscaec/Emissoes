@@ -1,0 +1,233 @@
+---
+title: "Gráficos CO2/GHG/Pop"
+author: " "
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    vertical_layout: fill
+    source_code: embed
+    
+    theme:
+      version: 4
+      bootswatch: spacelab
+---
+
+```{r setup, include=FALSE}
+
+#Bibliotecas necessárias
+library(shiny)
+library(flexdashboard)
+library(ggplot2)
+library(dplyr)
+library(plotly)
+library(readr)
+library(gganimate)
+library(tidyverse)
+library(lubridate)
+library(ggthemes)
+library(ggrepel)
+
+#//////////////////////// Chama os arquivos para a montagem dos graficos //////////////////////////////////////
+
+CO2_per_gdp <- read_csv("CO2_per_gdp.csv")
+
+CO2_per_gdp_ppp <- read_csv("CO2_per_gdp_ppp.csv")
+
+GHG_per_gdp <- read_csv("GHG_per_gdp.csv")
+
+GHG_per_gdp_ppp <- read_csv("GHG_per_gdp_ppp.csv")
+
+CO2_per_pop <- read_csv("CO2_per_pop.csv")
+
+GDP_per_POP <- read_csv(("GDP_per_POP.csv"), 
+    locale = locale(decimal_mark = ","))
+
+GHG_per_POP <- read_csv("GHG_per_POP.csv")
+ 
+dispersao1 <- read_csv("dispersao1.csv")
+dispersao2 <- read_csv("dispersao2.csv")
+
+#//////////////////////// Troca o nome das colunas conforme necessario //////////////////////////////////////
+
+  CO2_per_gdp_ppp <- rename(CO2_per_gdp_ppp, "Year" = Ano)
+  
+  GHG_per_gdp <- rename(GHG_per_gdp, "country" = contry_name)
+  GHG_per_gdp_ppp <- rename(GHG_per_gdp_ppp, "Year" = ano)
+
+  CO2_per_pop <- rename(CO2_per_pop, "country" = "contry_name")
+  CO2_per_pop <- rename(CO2_per_pop, "CO2_kg_per_pop" = "CO2_per_pop")
+```
+
+
+# CO2
+row {data-width=650} {.tabset}
+----------------------------------------------------
+### .CO2 Constant GDP {data-padding=20}
+```{r}
+# Criação do gráfico CO2_per_gdp com as funçoes(ggplot,geom_point,geom_line) e depois transforma em interativo com a funçao ggplotly
+
+ grafico_1 = ggplot(data = CO2_per_gdp, aes(x = year, y = CO2_kg_per_US, group = " " ,color = Country)) +
+    geom_point()+
+    geom_line( aes(x = year, y = CO2_kg_per_US, color = Country))+
+  # Tema do fundo do grafico
+    theme_light()+
+  # determina a escala dos eixos (x e y)
+    scale_x_continuous(breaks = seq(1990,2018))+
+    scale_y_continuous(breaks = seq(0,1.5,0.25))+
+  # Titulo do grafico e nome dos eixos
+    labs(title = "CO2 Emissions x GDP - Cumulative (1990 - 2018)", x = " ",
+       y = " CO2 kg per US$")
+
+  # Transforma em interativo
+    ggplotly(grafico_1)
+
+```
+> Source: World Bank (2021)	/                                                                                                                 Authored by: Ministry of Foreign Affairs, SCAEC, Economic Intelligence Center (2021)
+
+### .CO2 GDP (PPP) {data-padding=20}
+```{r}
+# Faz a criação do gráfico CO2_per_gdp_ppp com as funçoes(ggplot,geom_point,geom_line) e depois transforma em interativo com a funçao ggplotly
+
+grafico_2 = ggplot(data = CO2_per_gdp_ppp, aes(x = Year, y = CO2_kg_per_ppp_US, group = " " ,color = Country)) +
+              geom_point()+
+              geom_line( aes(x = Year, y = CO2_kg_per_ppp_US, color = Country))+
+            # Tema do fundo do grafico
+              theme_light()+
+            # determina a escala dos eixos (x e y)
+              scale_x_continuous(breaks = seq(1990,2018))+
+              scale_y_continuous(breaks = seq(0,2,0.25))+
+              labs(title = "CO2 Emissions x GDP (PPP) - Cumulative (1990 - 2018)", 
+                 x = " ",
+                 y = "CO2 kg per (ppp) US$")
+
+            # Transforma em interativo
+             ggplotly(grafico_2)
+```
+> Source: World Bank (2021)	/                                                                                                                 Authored by: Ministry of Foreign Affairs, SCAEC, Economic Intelligence Center (2021)
+
+
+# GHG 
+row {data-width=350} {.tabset}
+-----------------------------------------------------------------------
+### .GHG Constant GDP {data-padding=20}
+```{r}
+# Faz a criação do gráfico GHG_per_gdp com as funçoes(ggplot,geom_point,geom_line) e depois transforma em interativo com a funçao ggplotly 
+
+  grafico_3 = ggplot(data = GHG_per_gdp,aes(x = year, y = GHG_per_GDP_US, group = " " ,color = country)) +
+    geom_point()+
+    geom_line( aes(x = year, y = GHG_per_GDP_US, color = country))+
+  # Tema do fundo do grafico
+    theme_light()+
+  # determina a escala dos eixos (x e y)
+    scale_x_continuous(breaks = seq(1990,2018))+
+    scale_y_continuous(breaks = seq(0,2.5,0.25))+
+    labs(title = "Greenhouse gas (GHG) emissions x Constant GDP - Cumulative(1990 - 2018)", 
+          x = " ",
+          y = "kg of equivalent CO2 emission per US$")
+ # Transforma em interativo
+    ggplotly(grafico_3)
+```
+> Source: World Bank (2021)	/                                                                                                                 Authored by: Ministry of Foreign Affairs, SCAEC, Economic Intelligence Center (2021)
+
+### .GHG GDP (PPP) {data-padding=20}
+```{r}
+# Faz a criação do gráfico GHG_per_gdp_ppp com as funçoes(ggplot,geom_point,geom_line) e depois transforma em interativo com a funçao ggplotly 
+
+  grafico_4 = ggplot(data = GHG_per_gdp_ppp, aes(x = Year, y = GHG_per_gdp_ppp_US, group = " " ,color = Country)) +
+      geom_point()+
+      geom_line( aes(x = Year, y = GHG_per_gdp_ppp_US, color = Country))+
+  # Tema do fundo do grafico
+      theme_light()+
+  # determina a escala dos eixos (x e y)
+      scale_x_continuous(breaks = seq(1990,2018))+
+      scale_y_continuous(breaks = seq(0, 2.5, 0.25))+
+      labs(title = "Greenhouse gas (GHG) emissions x GDP PPP - Cumulative(1990-2018)", 
+                    x = " ",
+                    y = "[kg of equivalent CO2 emission per (ppp) US$]")
+  # Transforma em interativo
+      ggplotly(grafico_4)
+```
+> Source: World Bank (2021)	/                                                                                                                 Authored by: Ministry of Foreign Affairs, SCAEC, Economic Intelligence Center (2021)
+
+
+#  CO2/GHG per Population
+row {data-width=350} {.tabset}
+-----------------------------------------------------------------------
+### .CO2 per POP {data-padding=20}
+```{r}
+ # grafico CO2 pela população (a cada 1000 Habitantes)
+
+ grafico_5 = ggplot(data = CO2_per_pop, aes(x = year, y = CO2_kg_per_pop, group = " " ,color = country)) +
+      geom_point()+
+      geom_line( aes(x = year, y = CO2_kg_per_pop, color = country))+
+  # Tema do fundo
+      theme_light()+
+  # Define as escala dos eixos
+      scale_x_continuous(breaks = seq(1990,2018))+
+      scale_y_continuous(breaks = seq(0,20,5))+
+      labs(title = "CO2 Emissions x Population (1990-2018)", 
+                   x = " ",
+                    y = "CO2 kg per 1000 hab")
+  # Transforma o grafico em interativo
+      ggplotly(grafico_5)
+```
+> Source: World Bank (2021)	/                                                                                                               Authored by: Ministry of Foreign Affairs, SCAEC, Economic Intelligence Center (2021)
+
+### .GHG per POP{data-padding=20}
+```{r}
+ # grafico CO2 pela população (a cada 1000 Habitantes)
+   grafico_5 = ggplot(data = GHG_per_POP, aes(x = year, y = GHG_per_POP, group = " " ,color = country)) +
+      geom_point()+
+      geom_line( aes(x = year, y = GHG_per_POP, color = country))+
+  # Tema do fundo
+      theme_light()+
+  # Define as escala dos eixos
+      scale_x_continuous(breaks = seq(1990,2018))+
+      scale_y_continuous(breaks = seq(0,35,5))+
+      labs(title = "Greenhouse gas (GHG) emissions x Population (1990-2018)", 
+                   x = " ",
+                    y = "GHG kg per 1000 hab")
+  # Transforma o grafico em interativo
+      ggplotly(grafico_5)
+```
+> Source: World Bank (2021) /	                                                                                                                 Authored by: Ministry of Foreign Affairs, SCAEC, Economic Intelligence Center (2021)
+
+
+# Dispersão
+row {data-width=350} {.tabset}
+-----------------------------------------------------------------------
+### .(CO2 / GDP) per (CO2 / pop) {data-padding=20}
+```{r}
+# Dispersão 1 (CO2 / GDP) per (CO2 / pop)
+  dispersao1 <- dispersao1 %>%
+    filter(dispersao1$year %in% "2018") 
+
+    grafico_7 = ggplot(data = dispersao1, aes(x = CO2_per_pop , y = CO2_per_GDP, color = country)) +
+      geom_text(label = dispersao1$country)+
+      scale_x_continuous(breaks = seq(0, 25, 2.5))+
+      scale_y_continuous(breaks = seq(0, 2, 0.25))+
+      theme_bw()+
+      labs(title = "CO2 emissions - per population x per GDP(Year: 2018)", 
+           x = "CO2 per POP (kg of CO2 emissions per 1000 hab)",
+           y = "CO2 per GDP (kg of CO2 emissions per US$)")
+    ggplotly(grafico_7)
+
+```
+> Source: World Bank (2021) /	                                                                                                                 Authored by: Ministry of Foreign Affairs, SCAEC, Economic Intelligence Center (2021)
+
+### .(GHG / GDP) per (GHG / pop) {data-padding=20}
+```{r}
+# Disperão 2 (GHG / GDP) per (GHG / pop)
+    grafico_8 = ggplot(data = dispersao2, aes(x = GHG_per_POP , y = GHG_per_GDP_US, color = country)) +
+      geom_text(label = dispersao2$country)+
+      scale_x_continuous(breaks = seq(0, 25, 5))+
+      scale_y_continuous(breaks = seq(0, 2, 0.25))+
+      theme_bw()+
+      labs(title = "Greenhouse gas emissions - per population x per GDP (Year: 2018)", 
+                   x = "GHG per POP (kg of equivalent CO2 emissions per 1000 hab) ",
+                    y = " GHG per GDP (kg of equivalent CO2 emissions per US$)")
+    ggplotly(grafico_8)
+    
+```
+> Source: World Bank (2021) /	                                                                                                                 Authored by: Ministry of Foreign Affairs, SCAEC, Economic Intelligence Center (2021)
+

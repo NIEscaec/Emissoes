@@ -1,0 +1,581 @@
+contry_name,year,GHG_per_GDP_US
+Argentina,1990,1.193
+Argentina,1991,1.153
+Argentina,1992,1.116
+Argentina,1993,1.078
+Argentina,1994,1.048
+Argentina,1995,1.035
+Argentina,1996,1.024
+Argentina,1997,1.006
+Argentina,1998,0.989
+Argentina,1999,0.982
+Argentina,2000,0.977
+Argentina,2001,0.976
+Argentina,2002,0.982
+Argentina,2003,0.987
+Argentina,2004,0.989
+Argentina,2005,0.986
+Argentina,2006,0.981
+Argentina,2007,0.973
+Argentina,2008,0.964
+Argentina,2009,0.957
+Argentina,2010,0.946
+Argentina,2011,0.934
+Argentina,2012,0.925
+Argentina,2013,0.917
+Argentina,2014,0.911
+Argentina,2015,0.905
+Argentina,2016,0.901
+Argentina,2017,0.896
+Argentina,2018,0.892
+Australia,1990,0.822
+Australia,1991,0.824
+Australia,1992,0.824
+Australia,1993,0.816
+Australia,1994,0.806
+Australia,1995,0.796
+Australia,1996,0.784
+Australia,1997,0.772
+Australia,1998,0.764
+Australia,1999,0.758
+Australia,2000,0.754
+Australia,2001,0.752
+Australia,2002,0.746
+Australia,2003,0.732
+Australia,2004,0.724
+Australia,2005,0.711
+Australia,2006,0.703
+Australia,2007,0.693
+Australia,2008,0.682
+Australia,2009,0.672
+Australia,2010,0.661
+Australia,2011,0.656
+Australia,2012,0.649
+Australia,2013,0.639
+Australia,2014,0.629
+Australia,2015,0.619
+Australia,2016,0.609
+Australia,2017,0.601
+Australia,2018,0.592
+Brazil,1990,0.499
+Brazil,1991,0.507
+Brazil,1992,0.513
+Brazil,1993,0.512
+Brazil,1994,0.509
+Brazil,1995,0.505
+Brazil,1996,0.502
+Brazil,1997,0.5
+Brazil,1998,0.5
+Brazil,1999,0.501
+Brazil,2000,0.501
+Brazil,2001,0.502
+Brazil,2002,0.503
+Brazil,2003,0.504
+Brazil,2004,0.505
+Brazil,2005,0.504
+Brazil,2006,0.503
+Brazil,2007,0.5
+Brazil,2008,0.496
+Brazil,2009,0.493
+Brazil,2010,0.49
+Brazil,2011,0.486
+Brazil,2012,0.484
+Brazil,2013,0.481
+Brazil,2014,0.48
+Brazil,2015,0.479
+Brazil,2016,0.478
+Brazil,2017,0.478
+Brazil,2018,0.476
+Canada,1990,NA
+Canada,1991,NA
+Canada,1992,NA
+Canada,1993,NA
+Canada,1994,NA
+Canada,1995,NA
+Canada,1996,NA
+Canada,1997,0.595
+Canada,1998,0.59
+Canada,1999,0.582
+Canada,2000,0.575
+Canada,2001,0.567
+Canada,2002,0.562
+Canada,2003,0.557
+Canada,2004,0.55
+Canada,2005,0.542
+Canada,2006,0.532
+Canada,2007,0.523
+Canada,2008,0.514
+Canada,2009,0.506
+Canada,2010,0.498
+Canada,2011,0.491
+Canada,2012,0.485
+Canada,2013,0.479
+Canada,2014,0.474
+Canada,2015,0.469
+Canada,2016,0.463
+Canada,2017,0.458
+Canada,2018,0.454
+Chile,1990,0.603
+Chile,1991,0.576
+Chile,1992,0.556
+Chile,1993,0.541
+Chile,1994,0.534
+Chile,1995,0.527
+Chile,1996,0.526
+Chile,1997,0.528
+Chile,1998,0.527
+Chile,1999,0.53
+Chile,2000,0.526
+Chile,2001,0.519
+Chile,2002,0.513
+Chile,2003,0.506
+Chile,2004,0.501
+Chile,2005,0.494
+Chile,2006,0.486
+Chile,2007,0.481
+Chile,2008,0.478
+Chile,2009,0.474
+Chile,2010,0.471
+Chile,2011,0.468
+Chile,2012,0.464
+Chile,2013,0.461
+Chile,2014,0.456
+Chile,2015,0.452
+Chile,2016,0.449
+Chile,2017,0.447
+Chile,2018,0.443
+Germany,1990,0.45
+Germany,1991,0.434
+Germany,1992,0.419
+Germany,1993,0.413
+Germany,1994,0.406
+Germany,1995,0.4
+Germany,1996,0.397
+Germany,1997,0.392
+Germany,1998,0.386
+Germany,1999,0.379
+Germany,2000,0.373
+Germany,2001,0.367
+Germany,2002,0.362
+Germany,2003,0.358
+Germany,2004,0.354
+Germany,2005,0.35
+Germany,2006,0.345
+Germany,2007,0.34
+Germany,2008,0.335
+Germany,2009,0.331
+Germany,2010,0.327
+Germany,2011,0.323
+Germany,2012,0.319
+Germany,2013,0.316
+Germany,2014,0.312
+Germany,2015,0.308
+Germany,2016,0.304
+Germany,2017,0.301
+Germany,2018,0.297
+European Union,1990,0.447
+European Union,1991,0.439
+European Union,1992,0.43
+European Union,1993,0.425
+European Union,1994,0.419
+European Union,1995,0.414
+European Union,1996,0.411
+European Union,1997,0.406
+European Union,1998,0.4
+European Union,1999,0.394
+European Union,2000,0.388
+European Union,2001,0.382
+European Union,2002,0.377
+European Union,2003,0.373
+European Union,2004,0.369
+European Union,2005,0.364
+European Union,2006,0.36
+European Union,2007,0.355
+European Union,2008,0.35
+European Union,2009,0.346
+European Union,2010,0.342
+European Union,2011,0.337
+European Union,2012,0.333
+European Union,2013,0.329
+European Union,2014,0.325
+European Union,2015,0.321
+European Union,2016,0.317
+European Union,2017,0.313
+European Union,2018,0.309
+France,1990,0.265
+France,1991,0.271
+France,1992,0.268
+France,1993,0.265
+France,1994,0.261
+France,1995,0.259
+France,1996,0.258
+France,1997,0.256
+France,1998,0.254
+France,1999,0.251
+France,2000,0.247
+France,2001,0.244
+France,2002,0.241
+France,2003,0.239
+France,2004,0.236
+France,2005,0.234
+France,2006,0.231
+France,2007,0.228
+France,2008,0.225
+France,2009,0.222
+France,2010,0.22
+France,2011,0.217
+France,2012,0.215
+France,2013,0.212
+France,2014,0.21
+France,2015,0.207
+France,2016,0.205
+France,2017,0.202
+France,2018,0.2
+United Kingdom,1990,0.462
+United Kingdom,1991,0.47
+United Kingdom,1992,0.467
+United Kingdom,1993,0.46
+United Kingdom,1994,0.451
+United Kingdom,1995,0.442
+United Kingdom,1996,0.436
+United Kingdom,1997,0.428
+United Kingdom,1998,0.419
+United Kingdom,1999,0.409
+United Kingdom,2000,0.4
+United Kingdom,2001,0.392
+United Kingdom,2002,0.384
+United Kingdom,2003,0.377
+United Kingdom,2004,0.37
+United Kingdom,2005,0.363
+United Kingdom,2006,0.356
+United Kingdom,2007,0.349
+United Kingdom,2008,0.343
+United Kingdom,2009,0.337
+United Kingdom,2010,0.331
+United Kingdom,2011,0.325
+United Kingdom,2012,0.32
+United Kingdom,2013,0.314
+United Kingdom,2014,0.308
+United Kingdom,2015,0.302
+United Kingdom,2016,0.296
+United Kingdom,2017,0.29
+United Kingdom,2018,0.284
+Indonesia,1990,1.635
+Indonesia,1991,1.607
+Indonesia,1992,1.584
+Indonesia,1993,1.559
+Indonesia,1994,1.529
+Indonesia,1995,1.502
+Indonesia,1996,1.47
+Indonesia,1997,1.444
+Indonesia,1998,1.451
+Indonesia,1999,1.46
+Indonesia,2000,1.462
+Indonesia,2001,1.461
+Indonesia,2002,1.454
+Indonesia,2003,1.447
+Indonesia,2004,1.435
+Indonesia,2005,1.419
+Indonesia,2006,1.401
+Indonesia,2007,1.381
+Indonesia,2008,1.357
+Indonesia,2009,1.335
+Indonesia,2010,1.311
+Indonesia,2011,1.291
+Indonesia,2012,1.269
+Indonesia,2013,1.242
+Indonesia,2014,1.219
+Indonesia,2015,1.196
+Indonesia,2016,1.172
+Indonesia,2017,1.151
+Indonesia,2018,1.131
+India,1990,2.416
+India,1991,2.458
+India,1992,2.447
+India,1993,2.428
+India,1994,2.4
+India,1995,2.37
+India,1996,2.333
+India,1997,2.306
+India,1998,2.274
+India,1999,2.237
+India,2000,2.205
+India,2001,2.171
+India,2002,2.139
+India,2003,2.101
+India,2004,2.063
+India,2005,2.023
+India,2006,1.984
+India,2007,1.948
+India,2008,1.919
+India,2009,1.891
+India,2010,1.86
+India,2011,1.832
+India,2012,1.807
+India,2013,1.779
+India,2014,1.753
+India,2015,1.721
+India,2016,1.684
+India,2017,1.649
+India,2018,1.615
+Italy,1990,0.281
+Italy,1991,0.278
+Italy,1992,0.275
+Italy,1993,0.274
+Italy,1994,0.271
+Italy,1995,0.271
+Italy,1996,0.269
+Italy,1997,0.268
+Italy,1998,0.267
+Italy,1999,0.266
+Italy,2000,0.265
+Italy,2001,0.263
+Italy,2002,0.262
+Italy,2003,0.262
+Italy,2004,0.262
+Italy,2005,0.261
+Italy,2006,0.261
+Italy,2007,0.259
+Italy,2008,0.258
+Italy,2009,0.257
+Italy,2010,0.255
+Italy,2011,0.253
+Italy,2012,0.252
+Italy,2013,0.25
+Italy,2014,0.248
+Italy,2015,0.246
+Italy,2016,0.244
+Italy,2017,0.242
+Italy,2018,0.24
+Japan,1990,0.252
+Japan,1991,0.249
+Japan,1992,0.249
+Japan,1993,0.248
+Japan,1994,0.25
+Japan,1995,0.25
+Japan,1996,0.25
+Japan,1997,0.249
+Japan,1998,0.247
+Japan,1999,0.247
+Japan,2000,0.246
+Japan,2001,0.245
+Japan,2002,0.244
+Japan,2003,0.244
+Japan,2004,0.243
+Japan,2005,0.242
+Japan,2006,0.24
+Japan,2007,0.239
+Japan,2008,0.238
+Japan,2009,0.236
+Japan,2010,0.235
+Japan,2011,0.235
+Japan,2012,0.235
+Japan,2013,0.234
+Japan,2014,0.234
+Japan,2015,0.233
+Japan,2016,0.232
+Japan,2017,0.23
+Japan,2018,0.229
+"Korea, Rep.",1990,0.787
+"Korea, Rep.",1991,0.78
+"Korea, Rep.",1992,0.782
+"Korea, Rep.",1993,0.788
+"Korea, Rep.",1994,0.788
+"Korea, Rep.",1995,0.786
+"Korea, Rep.",1996,0.783
+"Korea, Rep.",1997,0.78
+"Korea, Rep.",1998,0.77
+"Korea, Rep.",1999,0.759
+"Korea, Rep.",2000,0.752
+"Korea, Rep.",2001,0.746
+"Korea, Rep.",2002,0.734
+"Korea, Rep.",2003,0.723
+"Korea, Rep.",2004,0.713
+"Korea, Rep.",2005,0.702
+"Korea, Rep.",2006,0.691
+"Korea, Rep.",2007,0.679
+"Korea, Rep.",2008,0.668
+"Korea, Rep.",2009,0.66
+"Korea, Rep.",2010,0.653
+"Korea, Rep.",2011,0.646
+"Korea, Rep.",2012,0.64
+"Korea, Rep.",2013,0.633
+"Korea, Rep.",2014,0.626
+"Korea, Rep.",2015,0.619
+"Korea, Rep.",2016,0.613
+"Korea, Rep.",2017,0.606
+"Korea, Rep.",2018,0.6
+Mexico,1990,0.601
+Mexico,1991,0.602
+Mexico,1992,0.597
+Mexico,1993,0.598
+Mexico,1994,0.6
+Mexico,1995,0.604
+Mexico,1996,0.606
+Mexico,1997,0.607
+Mexico,1998,0.608
+Mexico,1999,0.605
+Mexico,2000,0.602
+Mexico,2001,0.6
+Mexico,2002,0.599
+Mexico,2003,0.599
+Mexico,2004,0.598
+Mexico,2005,0.598
+Mexico,2006,0.597
+Mexico,2007,0.598
+Mexico,2008,0.599
+Mexico,2009,0.602
+Mexico,2010,0.602
+Mexico,2011,0.603
+Mexico,2012,0.601
+Mexico,2013,0.6
+Mexico,2014,0.597
+Mexico,2015,0.594
+Mexico,2016,0.592
+Mexico,2017,0.589
+Mexico,2018,0.585
+Russian Federation,1990,2.296
+Russian Federation,1991,2.321
+Russian Federation,1992,2.385
+Russian Federation,1993,2.417
+Russian Federation,1994,2.444
+Russian Federation,1995,2.466
+Russian Federation,1996,2.487
+Russian Federation,1997,2.485
+Russian Federation,1998,2.494
+Russian Federation,1999,2.492
+Russian Federation,2000,2.476
+Russian Federation,2001,2.455
+Russian Federation,2002,2.43
+Russian Federation,2003,2.401
+Russian Federation,2004,2.367
+Russian Federation,2005,2.327
+Russian Federation,2006,2.284
+Russian Federation,2007,2.234
+Russian Federation,2008,2.185
+Russian Federation,2009,2.147
+Russian Federation,2010,2.113
+Russian Federation,2011,2.082
+Russian Federation,2012,2.05
+Russian Federation,2013,2.018
+Russian Federation,2014,1.989
+Russian Federation,2015,1.963
+Russian Federation,2016,1.94
+Russian Federation,2017,1.918
+Russian Federation,2018,1.896
+Saudi Arabia,1990,0.649
+Saudi Arabia,1991,0.638
+Saudi Arabia,1992,0.642
+Saudi Arabia,1993,0.652
+Saudi Arabia,1994,0.665
+Saudi Arabia,1995,0.677
+Saudi Arabia,1996,0.688
+Saudi Arabia,1997,0.689
+Saudi Arabia,1998,0.694
+Saudi Arabia,1999,0.703
+Saudi Arabia,2000,0.709
+Saudi Arabia,2001,0.717
+Saudi Arabia,2002,0.729
+Saudi Arabia,2003,0.736
+Saudi Arabia,2004,0.742
+Saudi Arabia,2005,0.746
+Saudi Arabia,2006,0.751
+Saudi Arabia,2007,0.758
+Saudi Arabia,2008,0.767
+Saudi Arabia,2009,0.778
+Saudi Arabia,2010,0.79
+Saudi Arabia,2011,0.798
+Saudi Arabia,2012,0.806
+Saudi Arabia,2013,0.814
+Saudi Arabia,2014,0.823
+Saudi Arabia,2015,0.832
+Saudi Arabia,2016,0.839
+Saudi Arabia,2017,0.846
+Saudi Arabia,2018,0.849
+Turkey,1990,0.565
+Turkey,1991,0.566
+Turkey,1992,0.564
+Turkey,1993,0.556
+Turkey,1994,0.555
+Turkey,1995,0.553
+Turkey,1996,0.551
+Turkey,1997,0.547
+Turkey,1998,0.543
+Turkey,1999,0.542
+Turkey,2000,0.542
+Turkey,2001,0.541
+Turkey,2002,0.539
+Turkey,2003,0.537
+Turkey,2004,0.531
+Turkey,2005,0.525
+Turkey,2006,0.52
+Turkey,2007,0.517
+Turkey,2008,0.514
+Turkey,2009,0.514
+Turkey,2010,0.512
+Turkey,2011,0.508
+Turkey,2012,0.504
+Turkey,2013,0.498
+Turkey,2014,0.492
+Turkey,2015,0.486
+Turkey,2016,0.481
+Turkey,2017,0.476
+Turkey,2018,0.472
+United States,1990,0.662
+United States,1991,0.66
+United States,1992,0.655
+United States,1993,0.651
+United States,1994,0.645
+United States,1995,0.639
+United States,1996,0.634
+United States,1997,0.63
+United States,1998,0.623
+United States,1999,0.615
+United States,2000,0.607
+United States,2001,0.6
+United States,2002,0.592
+United States,2003,0.584
+United States,2004,0.576
+United States,2005,0.568
+United States,2006,0.56
+United States,2007,0.552
+United States,2008,0.545
+United States,2009,0.538
+United States,2010,0.531
+United States,2011,0.524
+United States,2012,0.517
+United States,2013,0.51
+United States,2014,0.503
+United States,2015,0.496
+United States,2016,0.489
+United States,2017,0.481
+United States,2018,0.475
+South Africa,1990,1.402
+South Africa,1991,1.4
+South Africa,1992,1.405
+South Africa,1993,1.413
+South Africa,1994,1.414
+South Africa,1995,1.415
+South Africa,1996,1.413
+South Africa,1997,1.414
+South Africa,1998,1.417
+South Africa,1999,1.407
+South Africa,2000,1.395
+South Africa,2001,1.393
+South Africa,2002,1.393
+South Africa,2003,1.395
+South Africa,2004,1.399
+South Africa,2005,1.397
+South Africa,2006,1.39
+South Africa,2007,1.383
+South Africa,2008,1.381
+South Africa,2009,1.376
+South Africa,2010,1.373
+South Africa,2011,1.365
+South Africa,2012,1.36
+South Africa,2013,1.354
+South Africa,2014,1.35
+South Africa,2015,1.341
+South Africa,2016,1.334
+South Africa,2017,1.328
+South Africa,2018,1.322
